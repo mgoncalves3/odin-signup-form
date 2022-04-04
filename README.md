@@ -5,12 +5,12 @@ A design file is given for reference.
 
 At first glance, some of the things I'll practice are:
 
-> Grid page layout
-> Positioning with Flexbox
-> Backgrounds
-> Shadows
-> Form validation (probably with JS)
-> Simple animations
+- Grid page layout
+- Positioning with Flexbox
+- Backgrounds
+- Shadows
+- Form validation (probably with JS)
+- Simple animations
 
 
 Also, to expand on the page, I can make the backgrounds more active or add a parallax effect.
