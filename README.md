@@ -14,3 +14,5 @@ At first glance, some of the things I'll practice are:
 
 
 Also, to expand on the page, I can make the backgrounds more active or add a parallax effect.
+
+I'll try to do this project without using any framework.
