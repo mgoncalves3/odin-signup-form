@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body {
+  width: 100%;
+  margin: auto;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("background.jpg");
+  background-size: cover;
+  height: inherit;
+  color: #fff;  
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: inherit;
+  background-color: #f9fafb;
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 20vh 0;
+  padding: 1vh 8vw;
+}
+
+#odin-logo {
+  height: 6rem;
+}
+
+.title {
+  font-family: Norse;
+  font-size: 6rem;
+}
+
+.photo-credits {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.photo-credits a {
+  text-decoration: underline;
+}
+
+.photo-credits a:link {
+  color: inherit;
+}
+
+.photo-credits a:visited {
+  color: inherit;
+}
