@@ -26,33 +26,36 @@
         </p>
       </div>
       <div class="right-column">
-        <p>
+        <h2>
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. Sign up
           <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em> you want to.</p>
+        </h2>
+        <h2>You <em>know</em> you want to.</h2>
         <form action="#" id="new-account">
           <div class="form-container">
-            <label for="new-account">Let's do this!</label>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" required />
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" required />
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" required />
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" required />
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" required />
-            <label for="pwd-confirm">CONFIRM PASSWORD</label>
-            <input type="password" id="pwd-confirm" required />
-            <p>* All fields required</p>
+            <p>Let's do this!</p>
+            <div id="names">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" required />
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" required />
+              <label for="password">PASSWORD</label>
+              <input type="password" class="error" id="password" required />
+            </div>
+            <div id="contact">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" required />
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" required />
+              <label for="pwd-confirm">CONFIRM PASSWORD</label>
+              <input type="password" class="error" id="pwd-confirm" required />
+            </div>
+            <p id="required-mark">* Required Fields</p>
           </div>
           <button type="submit">Create Account</button>
+          <p id="have-acc">Already have an account? <a href="#">Log in</a></p>
         </form>
-        <p>Already have an account? <a href="#">Log in</a></p>
-      </div>
     </div>
   </body>
 </html>
