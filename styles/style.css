@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("background.jpg");
+  background-image: url("../background.jpg");
   background-size: cover;
   height: inherit;
   color: #fff;
@@ -29,42 +29,69 @@ body {
   flex-direction: column;
   height: inherit;
   background-color: #f9fafb;
-  padding-top: 12vh;
+  padding-top: 13vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-container {
   display: grid;
-  grid-template-rows: 1fr 3fr 0fr;
+  grid-template-rows: .8fr 3fr 0.2fr;
   grid-template-columns: 1fr 2fr;
+  column-gap: 2rem;
   background-color: #fff;
   box-shadow: 5px 3px 12px 0px rgba(0, 0, 0, 0.2);
-  padding: 1vw 2vw;
+  padding: 4vh 2vw;
   height: fit-content;
 }
 
 label {
   font-weight: 600;
   letter-spacing: 2px;
-  font-size: .9rem;
+  font-size: 1vw;
+  margin-bottom: 1vh;
+  width: fit-content;
 }
 
 input {
-  width: 15rem;
+  width: 14rem;
   height: 2rem;
+  padding: 6px;
   margin-bottom: 1rem;
   border-radius: 5px;
   border: 1px solid #E5E7EB;
+  vertical-align: middle;
+  font-size: 1vw;
+  transition: all 300ms;
 }
 
 input:focus {
-  border: 1px solid #55a7d8;
-  border-radius: 5px;
+  outline: 1px solid #3DA7FF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 300ms;
 }
 
+.error {
+  outline: red 1px solid;
+  transition: all 300ms;
+}
+
+.error:focus {
+  outline: red 1px solid;
+  transition: all 300ms;
+}
+
+.error-message {
+  color: red;
+  font-size: .1vw;
+  margin: 0;
+  grid-row: 3 / 3;
+}
+
+/* "Let's do this!" */
 .form-container:first-child {
   grid-row: 1 / 1;
   grid-column: 1 / 2;
+  font-size: 1vw;
 }
 
 #names {
@@ -82,22 +109,14 @@ input:focus {
 }
 
 .form-container>p {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 600;
-}
-
-#required-mark {
-  grid-column: 1 / 1;
-  grid-row: 3 / 3;
-  font-size: 0.8rem;
-  font-weight: 400;
-  margin-top: 1rem;
-
 }
 
 .right-column h2 {
   font-family: Helvetica, sans-serif;
-  margin: 1.5rem 2vw;
+  margin: 0 10vw 1.5rem 2vw;
+  font-size: 1.5vw;
 }
 
 .title-container {
@@ -136,21 +155,29 @@ input:focus {
 }
 
 button {
-  margin: 2vw;
+  margin: 2vw 0 1vw 2vw;
   padding: 1rem 3rem;
   font-size: 1.1rem;
   background-color: #596D48;
   color: white;
   font-weight: 600;
+  font-size: 1vw;
   border-radius: 5px;
   border: 0px;
   font-family: Tahoma, sans-serif;
   letter-spacing: 1px;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: all 300ms;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0px 8px 3px rgba(0, 0, 0, 0.4);
+  transition: all 300ms;
 }
 
 #have-acc {
-  font-size: 1.2rem;
+  font-size: 1vw;
   margin-left: 2vw;
   font-weight: 600;
 }

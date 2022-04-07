@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="script.js" defer></script>
     <title>Odin Project / Sign-up form</title>
   </head>
@@ -41,17 +42,17 @@
               <label for="email">EMAIL</label>
               <input type="email" id="email" required />
               <label for="password">PASSWORD</label>
-              <input type="password" class="error" id="password" required />
+              <input type="password" class="" id="password" required />
             </div>
+            <div class="error-message" hidden>* Passwords don't match</div>
             <div id="contact">
               <label for="last-name">LAST NAME</label>
-              <input type="text" id="last-name" required />
+              <input type="text" id="last-name"/>
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" id="phone" required />
+              <input type="tel" id="phone"/>
               <label for="pwd-confirm">CONFIRM PASSWORD</label>
-              <input type="password" class="error" id="pwd-confirm" required />
+              <input type="password" class="" id="pwd-confirm" required />
             </div>
-            <p id="required-mark">* Required Fields</p>
           </div>
           <button type="submit">Create Account</button>
           <p id="have-acc">Already have an account? <a href="#">Log in</a></p>
