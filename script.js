@@ -9,16 +9,16 @@ function checkPw () {
   if (confirmPasswordField.value !== userPassword) {
     passwordField.classList.add("error");
     confirmPasswordField.classList.add("error");
-    errorMessage.toggleAttribute("hidden");
+    errorMessage.hidden = false;
   } else {
     passwordField.classList.remove("error");
     confirmPasswordField.classList.remove("error");
-    errorMessage.toggleAttribute("hidden");
+    errorMessage.hidden = true;
   }
 }
 
-passwordField.addEventListener("input", () => {
-  userPassword = passwordField.value
+passwordField.addEventListener("focusout", () => {
+  userPassword = passwordField.value;
 });
 
 confirmPasswordField.addEventListener("focusout", checkPw)
